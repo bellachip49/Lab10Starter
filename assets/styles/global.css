@@ -33,7 +33,7 @@ body {
 }
 
 body.blue {
-  background-color: white;
+  background-color: lightblue;
 }
 
 body.blue>main {
