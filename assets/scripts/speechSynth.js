@@ -6,6 +6,7 @@ let voices;
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  document.body.style.backgroundColor = '#4DA8DA';
   setTimeout(() => populateVoices(), 50);
   bindListeners();
 }
@@ -43,12 +44,23 @@ function getOptionIndex() {
 
 function openMouth() {
   let face = document.querySelector('#explore > img');
+
   face.setAttribute('src', 'assets/images/smiling-open.png');
-  setTimeout(() => {
-    if (synth.speaking) {
-      openMouth();
-    } else {
+  document.body.style.backgroundColor = '#80D8C3';
+
+  const interval = setInterval(() => {
+    if (!synth.speaking) {
       face.setAttribute('src', 'assets/images/smiling.png');
+      document.body.style.backgroundColor = '#4DA8DA'; // reset color
+      clearInterval(interval);
     }
   }, 100);
+  // setTimeout(() => {
+  //   if (synth.speaking) {
+  //     openMouth();
+  //   } else {
+  //     document.body.style.backgroundColor = '#4DA8DA';
+  //     face.setAttribute('src', 'assets/images/smiling.png');
+  //   }
+  // }, 100);
 }

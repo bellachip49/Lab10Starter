@@ -4,18 +4,41 @@
   font-family: sans-serif;
 }
 
+h2{
+  font-family: "Limelight", sans-serif;
+}
+
+button.btn {
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#voice-select.form-select {
+  background-color: #f0eada;
+  height: 38px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  line-height: 1.2;
+  font-size: 1rem;
+}
+
 body {
+  background-color: #4DA8DA; /* changes to #80D8C3 when speaking */
   align-items: center;
   display: grid;
   justify-items: center;
 }
 
 body.blue {
-  background-color: lightblue;
+  background-color: #4DA8DA;
 }
 
 body.blue>main {
-  background-color: white;
+  background-color: #4DA8DA;
   border-radius: 5px;
   padding: 30px
 }
