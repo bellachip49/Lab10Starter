@@ -46,12 +46,12 @@ function openMouth() {
   let face = document.querySelector('#explore > img');
 
   face.setAttribute('src', 'assets/images/smiling-open.png');
-  document.body.style.backgroundColor = '#80D8C3';
+  // document.body.style.backgroundColor = '#80D8C3';
 
   const interval = setInterval(() => {
     if (!synth.speaking) {
       face.setAttribute('src', 'assets/images/smiling.png');
-      document.body.style.backgroundColor = '#4DA8DA'; // reset color
+      // document.body.style.backgroundColor = '#4DA8DA'; // reset color
       clearInterval(interval);
     }
   }, 100);
