@@ -6,7 +6,7 @@ let voices;
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-  document.body.style.backgroundColor = '#4DA8DA';
+  // document.body.style.backgroundColor = '#4DA8DA';
   setTimeout(() => populateVoices(), 50);
   bindListeners();
 }
