@@ -33,11 +33,11 @@ body {
 }
 
 body.blue {
-  background-color: #4DA8DA;
+  background-color: white;
 }
 
 body.blue>main {
-  background-color: #4DA8DA;
+  background-color: white;
   border-radius: 5px;
   padding: 30px
 }
