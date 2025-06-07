@@ -27,7 +27,6 @@ button.btn {
 }
 
 body {
-  background-color: #4DA8DA; /* changes to #80D8C3 when speaking */
   align-items: center;
   display: grid;
   justify-items: center;
